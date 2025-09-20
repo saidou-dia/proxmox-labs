@@ -1,0 +1,9 @@
+# Clés et fichiers sensibles
+vars/secrets.yml
+*.key
+*.pem
+.env
+
+# Logs et temporaires
+*.log
+*.retry
