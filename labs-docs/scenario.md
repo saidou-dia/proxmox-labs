@@ -1,11 +1,64 @@
-# Scenario Lab Proxmox VE
+# Proxmox Labs - Workflow et automatisation
 
-## Workflow
-1. Vérification rapide avec pdsh (uptime, df -h)
-2. Mise à jour des paquets sur tous les nœuds avec Ansible
-3. Vérification post-mise à jour pour valider la disponibilité et l’espace disque
+Ce document illustre mes compétences en administration Proxmox, automatisation avec PDSH et Ansible, et gestion SSH/Git.  
+Les captures présentées montrent **des preuves concrètes d’exécution et résultats**, sans divulguer de fichiers sensibles.
 
-## Avantages pour le profil IT
-- Démonstration de maîtrise du cluster Proxmox
-- Automatisation répétable et sécurisée
-- Documentation claire pour recruteurs ou GitHub portfolio
+---
+
+## 1. Vérification de l’espace disque avec PDSH
+
+Le script `df_check.sh` permet de vérifier l’espace disque sur tous les nœuds Proxmox simultanément.
+
+**Exemple de sortie :**
+
+![DF Check PDSH](screenshots/pdsh_df_check.png)
+
+> Chaque nœud affiche son `df -h` de manière simultanée grâce à PDSH.  
+> Les fichiers sensibles comme `.pdsh_hosts` ne sont jamais versionnés.
+
+---
+
+## 2. Vérification de l’uptime des nœuds
+
+Grâce à PDSH, on peut vérifier rapidement la disponibilité de tous les nœuds.
+
+**Exemple de sortie :**
+
+![Uptime PDSH](screenshots/pdsh_uptime.png)
+
+> On voit que tous les nœuds sont accessibles et opérationnels.  
+> Utilisation de l’option `-R ssh -l sdia` pour se connecter avec l’utilisateur administrateur.
+
+---
+
+## 3. Automatisation avec Ansible
+
+Le playbook `update.yml` met à jour tous les paquets sur les nœuds Proxmox.
+
+**Exemple de sortie après exécution :**
+
+![Mise à jour Ansible](screenshots/ansible_update.png)
+
+> Chaque tâche s’exécute avec succès (`ok` ou `changed`) sur tous les nœuds.  
+> L’inventaire `hosts.ini` et les playbooks sont versionnés, tandis que les secrets restent locaux.
+
+---
+
+## 4. Connexion SSH et gestion Git
+
+Pour automatiser les accès SSH et le workflow Git :  
+
+- Clés SSH générées avec `ssh-keygen`  
+- Ajout des clés sur les nœuds Proxmox et GitHub  
+- Remote Git configuré en SSH pour pousser sans mot de passe  
+
+**Exemple de sortie SSH et Git :**
+
+![SSH & Git](screenshots/ssh_git.png)
+
+> Cela prouve la maîtrise de la configuration sécurisée et de la collaboration Git.
+
+---
+
+## 5. Structure du projet pour portfolio
+
