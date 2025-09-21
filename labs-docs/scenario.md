@@ -40,10 +40,9 @@ Pour automatiser les accès SSH et le workflow Git :
 - **Clé SSH ajoutée à GitHub** pour push/pull sans mot de passe.
 - **Remote Git configuré en SSH** pour éviter de saisir le mot de passe à chaque push. 
 
-**Exemple de sortie SSH et Git :**
-
 <img width="781" height="125" alt="image" src="https://github.com/user-attachments/assets/ac31f576-3ffc-4f42-afb9-17d3d41e59ba" />
 
+**Exemple de sortie SSH et Git :**
 
 Connexion SSH vers un nœud Proxmox
 <img width="911" height="238" alt="image" src="https://github.com/user-attachments/assets/ad438705-67c8-461d-ba19-908021a893b1" />
