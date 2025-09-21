@@ -3,6 +3,9 @@ vars/secrets.yml
 *.key
 *.pem
 .env
+.pdsh_hosts
+
+
 
 # Logs et temporaires
 *.log
