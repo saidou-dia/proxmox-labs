@@ -5,35 +5,20 @@ Les captures présentées montrent **des preuves concrètes d’exécution et r�
 
 ---
 
-## 1. Vérification de l’espace disque avec PDSH
+## 1. Vérification de l’espace disque et de l’uptime avec PDSH
 
-Le script `df_uptime_check.sh` permet de vérifier l’espace disque sur tous les nœuds Proxmox simultanément.
+Le script df_uptime_check.sh permet de vérifier simultanément l’espace disque (df -h) et l’uptime sur tous les nœuds Proxmox.
 
-**Exemple de sortie :**
+Chaque nœud affiche son utilisation disque et son uptime en même temps grâce à PDSH.
 
-<img width="776" height="893" alt="image" src="https://github.com/user-attachments/assets/34954f26-2b43-4aee-ab32-259bfeebfedd" />
-
-
-
-> Chaque nœud affiche son `df -h` de manière simultanée grâce à PDSH.  
-> Les fichiers sensibles comme `.pdsh_hosts` ne sont jamais versionnés.
-
----
-
-## 2. Vérification de l’uptime des nœuds
-
-Grâce à PDSH, on peut vérifier rapidement la disponibilité de tous les nœuds.
+Les fichiers sensibles comme .pdsh_hosts ne sont jamais versionnés et restent locaux.
 
 **Exemple de sortie :**
 
-![Uptime PDSH](screenshots/pdsh_uptime.png)
+<img width="777" height="889" alt="image" src="https://github.com/user-attachments/assets/ec82167a-f91c-4597-a9b4-a0230cbf2097" />
 
-> On voit que tous les nœuds sont accessibles et opérationnels.  
-> Utilisation de l’option `-R ssh -l sdia` pour se connecter avec l’utilisateur administrateur.
 
----
-
-## 3. Automatisation avec Ansible
+## 2. Automatisation avec Ansible
 
 Le playbook `update.yml` met à jour tous les paquets sur les nœuds Proxmox.
 
@@ -46,7 +31,7 @@ Le playbook `update.yml` met à jour tous les paquets sur les nœuds Proxmox.
 
 ---
 
-## 4. Connexion SSH et gestion Git
+## 3. Connexion SSH et gestion Git
 
 Pour automatiser les accès SSH et le workflow Git :  
 
@@ -62,5 +47,5 @@ Pour automatiser les accès SSH et le workflow Git :
 
 ---
 
-## 5. Structure du projet pour portfolio
+## 4. Structure du projet pour portfolio
 
