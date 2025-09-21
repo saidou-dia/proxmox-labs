@@ -50,6 +50,9 @@ Connexion SSH vers un nœud Proxmox
 Connexion SSH vers Github
 <img width="924" height="80" alt="image" src="https://github.com/user-attachments/assets/bcccd7bc-6a58-4d3b-bb55-a3f07673f720" />
 
+<img width="840" height="70" alt="image" src="https://github.com/user-attachments/assets/6e594d9f-14fe-4e9c-a8f3-7da9022e0a44" />
+
+
 
 > Cela prouve la maîtrise de la configuration sécurisée et de la collaboration Git.
 
