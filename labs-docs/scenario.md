@@ -11,7 +11,8 @@ Le script `df_uptime_check.sh` permet de vérifier l’espace disque sur tous le
 
 **Exemple de sortie :**
 
-<img width="787" height="756" alt="image" src="https://github.com/user-attachments/assets/cd29ca2c-bc8c-400e-a28f-ec362c0795d3" />
+<img width="776" height="893" alt="image" src="https://github.com/user-attachments/assets/34954f26-2b43-4aee-ab32-259bfeebfedd" />
+
 
 
 > Chaque nœud affiche son `df -h` de manière simultanée grâce à PDSH.  
