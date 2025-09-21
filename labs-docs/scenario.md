@@ -11,7 +11,8 @@ Le script `df_check.sh` permet de vérifier l’espace disque sur tous les nœud
 
 **Exemple de sortie :**
 
-![DF Check PDSH](screenshots/pdsh_df_check.png)
+<img width="787" height="756" alt="image" src="https://github.com/user-attachments/assets/cd29ca2c-bc8c-400e-a28f-ec362c0795d3" />
+
 
 > Chaque nœud affiche son `df -h` de manière simultanée grâce à PDSH.  
 > Les fichiers sensibles comme `.pdsh_hosts` ne sont jamais versionnés.
