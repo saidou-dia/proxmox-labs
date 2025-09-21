@@ -35,9 +35,10 @@ Le playbook `update.yml` met à jour tous les paquets sur les nœuds Proxmox.
 
 Pour automatiser les accès SSH et le workflow Git :  
 
-- Clés SSH générées avec `ssh-keygen`  
-- Ajout des clés sur les nœuds Proxmox et GitHub  
-- Remote Git configuré en SSH pour pousser sans mot de passe  
+- **Clés SSH** générées avec `ssh-keygen` pour l’utilisateur `sdia`.
+- **Clés publiques copiées sur les nœuds Proxmox** pour permettre la connexion sans mot de passe.
+- **Clé SSH ajoutée à GitHub** pour push/pull sans mot de passe.
+- **Remote Git configuré en SSH** pour éviter de saisir le mot de passe à chaque push. 
 
 **Exemple de sortie SSH et Git :**
 
