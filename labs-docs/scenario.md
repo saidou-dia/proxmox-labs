@@ -42,8 +42,8 @@ Pour automatiser les accès SSH et le workflow Git :
 
 **Exemple de sortie SSH et Git :**
 
-<img width="868" height="123" alt="image" src="https://github.com/user-attachments/assets/1a991872-9f6b-4d23-aeb6-f4ef0692795a" />
-<img width="649" height="95" alt="image" src="https://github.com/user-attachments/assets/936d24df-4b56-46e9-ae5f-2d98a406cea2" />
+<img width="781" height="125" alt="image" src="https://github.com/user-attachments/assets/ac31f576-3ffc-4f42-afb9-17d3d41e59ba" />
+
 
 
 ![SSH & Git](screenshots/ssh_git.png)
