@@ -57,6 +57,7 @@ Connexion SSH vers Github
 
 ## 4. Structure du projet pour portfolio
 
-<img width="503" height="341" alt="image" src="https://github.com/user-attachments/assets/208a781a-60c4-45db-9f66-2b825a12e5f7" />
+<img width="854" height="341" alt="image" src="https://github.com/user-attachments/assets/9452fe8f-195f-44d8-ba1a-9020d1a51be4" />
+
 
 
