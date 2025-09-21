@@ -7,7 +7,7 @@ Les captures présentées montrent **des preuves concrètes d’exécution et r�
 
 ## 1. Vérification de l’espace disque avec PDSH
 
-Le script `df_check.sh` permet de vérifier l’espace disque sur tous les nœuds Proxmox simultanément.
+Le script `df_uptime_check.sh` permet de vérifier l’espace disque sur tous les nœuds Proxmox simultanément.
 
 **Exemple de sortie :**
 
