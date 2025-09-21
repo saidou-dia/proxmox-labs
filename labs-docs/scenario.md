@@ -24,10 +24,10 @@ Le playbook `update.yml` met à jour tous les paquets sur les nœuds Proxmox.
 
 **Exemple de sortie après exécution :**
 
-![Mise à jour Ansible](screenshots/ansible_update.png)
+<img width="955" height="548" alt="image" src="https://github.com/user-attachments/assets/02ee52f1-cc14-4488-acfd-54a0efd3641d" />
+
 
 > Chaque tâche s’exécute avec succès (`ok` ou `changed`) sur tous les nœuds.  
-> L’inventaire `hosts.ini` et les playbooks sont versionnés, tandis que les secrets restent locaux.
 
 ---
 
