@@ -1,11 +1,14 @@
 - name: Mettre à jour tous les nœuds PVE
   hosts: pve
   become: yes
+  vars_files:
+    - ../vars/local.yml
   tasks:
     - name: Mettre à jour la liste des paquets
-      apt:
+      ansible.builtin.apt:
         update_cache: yes
 
     - name: Mettre à jour tous les paquets installés
-      apt:
+      ansible.builtin.apt:
         upgrade: dist
+

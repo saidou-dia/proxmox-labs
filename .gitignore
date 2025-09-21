@@ -1,5 +1,5 @@
 # Clés et fichiers sensibles
-vars/secrets.yml
+vars/local.yml
 *.key
 *.pem
 .env
